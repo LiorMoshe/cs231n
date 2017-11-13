@@ -209,7 +209,7 @@ class TwoLayerNet(object):
 
       # Every epoch, check train and val accuracy and decay learning rate.
       if it % iterations_per_epoch == 0:
-        # Check accuracy
+        # Check accuracy  
         train_acc = (self.predict(X_batch) == y_batch).astype(int).mean()
         val_acc = (self.predict(X_val) == y_val).astype(int).mean()
         train_acc_history.append(train_acc)
